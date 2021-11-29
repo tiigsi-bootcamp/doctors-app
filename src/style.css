@@ -1,0 +1,12 @@
+/* CSS Resets */
+@tailwind base;
+
+/* Tailwind custom made components .container */
+@tailwind components;
+
+/* Single responsibility classes e.g p-8 */
+@tailwind utilities;
+
+.button {
+	@apply px-5 py-2 bg-pink-700 text-white rounded hover:bg-pink-500 transition;
+}
