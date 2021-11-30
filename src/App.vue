@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import Message from './components/Message.vue';
+import Button from './components/Button.vue';
 
   // All JavaScript logic will go here.
 
@@ -10,24 +11,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
 
-  <h1>Hello Real VueJS!</h1>
+  <h1 title="Some information">Hello Real VueJS!</h1>
   <h1>This thing is amazing!</h1>
   <h4>{{ message }}</h4>
 
-  <Message />
+  <Message message="This is a new message from the other side of the world!" />
+
+  <Button text="Say Hi" />
+
+  <Button text="alert" color="bg-green-500" />
+
+  <Button text="Tada"></Button>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-h1 {
-  color: green;
-}
-</style>

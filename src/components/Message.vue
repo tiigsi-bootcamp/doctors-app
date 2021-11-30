@@ -1,9 +1,13 @@
 <script setup lang="ts">
 
+	// Props
+
+	defineProps<{ message: string }>();
+
 </script>
 
 <template>
-	<h4 class="text-purple-500 text-5xl">Hello from the other side!</h4>
+	<h4 class="text-purple-500 text-5xl">{{ message }}</h4>
 
 	<button class="button">Button</button>
 
