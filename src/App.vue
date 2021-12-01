@@ -1,10 +1,14 @@
 <script setup lang="ts">
-  import Message from './components/Message.vue';
-import Button from './components/Button.vue';
+import Message from "./components/Message.vue";
+import Button from "./components/Button.vue";
 
-  // All JavaScript logic will go here.
+// All JavaScript logic will go here.
 
-  let message = 'Vue is Amazing! 😃';
+let message = "Vue is Amazing! 😃";
+
+const sayHi = (name: string) => {
+  alert('Hi ' + name + '!');
+};
 
 </script>
 
@@ -21,5 +25,5 @@ import Button from './components/Button.vue';
 
   <Button text="alert" color="bg-green-500" />
 
-  <Button text="Tada"></Button>
+  <Button @sayHi="sayHi" text="Tada"></Button>
 </template>

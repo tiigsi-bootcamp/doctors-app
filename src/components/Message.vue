@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Button from './Button.vue';
 
 	// Props
 
@@ -13,5 +14,5 @@
 
 	<div class="my-5"></div>
 
-	<button class="button">Another Button</button>
+	<Button text="Hello" />
 </template>
