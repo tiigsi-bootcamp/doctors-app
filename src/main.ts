@@ -2,20 +2,22 @@ import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 
 import App from './App.vue';
-import Message from './components/Message.vue';
+import Login from './pages/Login.vue';
+import Doctors from './pages/Doctors.vue';
 
 import './style.css';
 
 const router = createRouter({
-	history: createWebHistory(),
 	routes: [
-		{ path: '/', component: Message },
-		{ path: '/login', component: {} },
-	]
+		{ path: '/login', component: Login },
+		{ path: '/doctors', component: Doctors },
+	],
+	history: createWebHistory()
 });
 
 const app = createApp(App);
 
+// Tell the application to use the router.
 app.use(router);
 
 app.mount('#app');
