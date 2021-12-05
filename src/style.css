@@ -8,5 +8,13 @@
 @tailwind utilities;
 
 .button {
-	@apply px-5 py-2 bg-pink-700 text-white rounded hover:bg-pink-500 transition;
+	@apply px-5 py-2 rounded transition;
+}
+
+.button-pink {
+	@apply bg-pink-600 text-gray-200;
+}
+
+.nav-item {
+	@apply py-4 px-2 text-gray-600 hover:text-green-500 transition hover:border-b-4 hover:border-green-500;
 }
