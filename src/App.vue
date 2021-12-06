@@ -5,12 +5,17 @@ import { RouterView, RouterLink } from 'vue-router';
 let isMenuHidden = ref(true);
 const toggleMenu = () => {
   isMenuHidden.value = !isMenuHidden.value;
-
-  console.log('Is menu hidden', isMenuHidden);
 };
+
 </script>
 
 <template class="bg-gray-200">
+  <div
+    v-if="isMenuHidden === false"
+    @click="toggleMenu"
+    class="bg-gray-500 h-screen w-screen fixed md:hidden bg-opacity-25"
+  ></div>
+
   <nav class="max-w-6xl mx-auto bg-gray-100 shadow-lg">
     <div class="flex justify-between items-center px-4">
       <div class="flex space-x-8">
@@ -58,8 +63,51 @@ const toggleMenu = () => {
       </button>
     </div>
 
-    <div class="bg-blue-400 w-64 transform fixed left-0 top-0 h-screen transition" :class="{ '-translate-x-64': isMenuHidden }">Menu</div>
+    <div
+      class="bg-blue-100 w-64 transform fixed md:hidden left-0 top-0 h-screen transition flex flex-col space-y-10 items-center justify-center"
+      :class="{ '-translate-x-64': isMenuHidden }"
+    >
+      <h4
+        class="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-500"
+      >Doctors App</h4>
+
+      <ul class="w-64 text-center">
+        <li>
+          <RouterLink
+            to="/"
+            class="block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+          >Home</RouterLink>
+        </li>
+        <li>
+          <RouterLink
+            to="/doctors"
+            class="block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+          >Doctor</RouterLink>
+        </li>
+        <li>
+          <RouterLink
+            to="/contact"
+            class="block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+          >Contact</RouterLink>
+        </li>
+      </ul>
+
+      <div class="flex space-x-2 pt-10">
+        <RouterLink to="/login" class="button hover:bg-pink-500 hover:text-white">Login</RouterLink>
+        <RouterLink to="/signup" class="button button-pink">Signup</RouterLink>
+      </div>
+    </div>
   </nav>
+
+  <div class="flex h-screen px-24 py-36">
+    <div class="flex-1">
+      <img src="/images/medicine.svg" />
+    </div>
+
+    <div class="flex-1">
+
+    </div>
+  </div>
 
   <RouterView />
 
