@@ -20,6 +20,7 @@ const handleSearch = () => {
     class="bg-gray-500 h-screen w-screen fixed md:hidden bg-opacity-25"
   ></div>
 
+ <div class="fixed w-full md:px-20">
   <nav class="max-w-6xl mx-auto bg-gray-100 shadow-lg">
     <div class="flex justify-between items-center px-4">
       <div class="flex space-x-8">
@@ -102,6 +103,7 @@ const handleSearch = () => {
       </div>
     </div>
   </nav>
+  </div>
 
   <div class="flex md:space-x-5 h-screen px-4 md:px-24 py-36">
     <div class="hidden md:block flex-1">
