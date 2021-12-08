@@ -26,13 +26,13 @@ let isMenuHidden = ref(true);
 
 					<ul class="hidden md:flex space-x-2 items-center">
 						<li>
-							<RouterLink to="#" class="nav-item">Home</RouterLink>
+							<RouterLink to="/" class="nav-item">Home</RouterLink>
 						</li>
 						<li>
-							<RouterLink to="#" class="nav-item">Doctors</RouterLink>
+							<RouterLink to="/doctors" class="nav-item">Doctors</RouterLink>
 						</li>
 						<li>
-							<RouterLink to="#" class="nav-item">Contact</RouterLink>
+							<RouterLink to="/contact" class="nav-item">Contact</RouterLink>
 						</li>
 					</ul>
 				</div>

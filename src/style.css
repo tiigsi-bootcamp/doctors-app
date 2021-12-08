@@ -15,6 +15,10 @@
 	@apply bg-pink-600 text-gray-200;
 }
 
+.router-link-active {
+	@apply text-green-500 border-b-4 border-green-500;
+}
+
 .nav-item {
 	@apply py-4 px-2 text-gray-600 hover:text-green-500 transition hover:border-b-4 hover:border-green-500;
 }

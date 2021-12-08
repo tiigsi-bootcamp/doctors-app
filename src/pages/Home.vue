@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 const handleSearch = () => {
-  console.log('Handle submit');
+	console.log('Handle submit');
 };
 
 </script>
@@ -30,7 +30,7 @@ const handleSearch = () => {
 					</div>
 
 					<div>
-						<select class="py-2 px-4 w-full outline-none ring-1 rounded pointer-events-none focus:ring">
+						<select class="py-2 px-4 w-full outline-none ring-1 rounded focus:ring">
 							<option selected>Select Specialty</option>
 							<option value="Nerves">Nerves</option>
 							<option value="Kaylyo">Kalyo</option>
@@ -46,6 +46,27 @@ const handleSearch = () => {
 						>Search</button>
 					</div>
 				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="w-full px-10 pb-10">
+		<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+			<div class="bg-blue-200 shadow-lg rounded-lg p-8 text-center hover:shadow-xl hover:scale-110 transition">
+				<h1 class="text-2xl">Test</h1>
+				<span>11 Doctors</span>
+			</div>
+			<div class="bg-blue-200 shadow-lg rounded-lg p-8 text-center hover:shadow-xl hover:scale-110 transition">
+				<h1 class="text-2xl">Test</h1>
+				<span>11 Doctors</span>
+			</div>
+			<div class="bg-blue-200 shadow-lg rounded-lg p-8 text-center hover:shadow-xl hover:scale-110 transition">
+				<h1 class="text-2xl">Test</h1>
+				<span>11 Doctors</span>
+			</div>
+			<div class="bg-blue-200 shadow-lg rounded-lg p-8 text-center hover:shadow-xl hover:scale-110 transition">
+				<h1 class="text-2xl">Test</h1>
+				<span>11 Doctors</span>
 			</div>
 		</div>
 	</div>
