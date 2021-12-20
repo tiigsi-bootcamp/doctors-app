@@ -25,6 +25,6 @@
 
 .button-form {
   @apply px-4  py-2 bg-cyan-400  hover:bg-cyan-500 tracking-widest
-   transition
+   transition font-semibold
    rounded;
 }

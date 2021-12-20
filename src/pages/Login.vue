@@ -4,7 +4,7 @@ const handleLogin = function () {};
 </script>
 
 <template>
-  <div class="flex md:space-x-5 h-screen px-4 md:px-24 py-16">
+  <div class="flex md:space-x-5 px-4 md:px-24 py-16 items-center">
     <div class="hidden md:block flex-1">
       <img class="" src="/images/login.svg" alt="" />
     </div>
@@ -14,7 +14,7 @@ const handleLogin = function () {};
         class="
           bg-gray-50
           rounded-md
-          shadow-2xl shadow-cyan-500/50
+          shadow-lg shadow-cyan-300/50
           block
           max-w-96
           p-8
@@ -58,7 +58,7 @@ const handleLogin = function () {};
 
           <div class="text-center">
             <button type="submit" class="w-full text-white button-form">
-              Search
+              Login
             </button>
 
             <div>
