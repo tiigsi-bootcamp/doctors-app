@@ -5,6 +5,7 @@ import App from './App.vue';
 import Login from './pages/Login.vue';
 import Doctors from './pages/Doctors.vue';
 import Home from './pages/Home.vue';
+import Signup from './views/Signup.vue';
 
 import './style.css';
 
@@ -13,6 +14,7 @@ const router = createRouter({
 		{ path: '/', component: Home },
 		{ path: '/login', component: Login },
 		{ path: '/doctors', component: Doctors },
+		{ path: '/signup', component: Signup },
 	],
 	history: createWebHistory()
 });
