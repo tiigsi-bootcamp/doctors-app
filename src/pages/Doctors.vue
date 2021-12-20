@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import DoctorsCard from '../components/DoctorsCard.vue';
+import Footer from '../components/Footer.vue';
 </script>
 
 <template>
@@ -23,4 +24,5 @@ import DoctorsCard from '../components/DoctorsCard.vue';
 
     <DoctorsCard name="Test Person" specialty="PhD in testing & stuff"></DoctorsCard>
   </div>
+   <Footer />
 </template>

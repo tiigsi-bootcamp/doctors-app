@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import SpecialtyCard from '../components/SpecialtyCard.vue';
 import Button from '../components/Button.vue';
+import Footer from '../components/Footer.vue';
 
 const handleSearch = () => {
 	console.log('Handle submit');
@@ -94,4 +95,5 @@ const handleSearch = () => {
 			<SpecialtyCard title="Test" :doctors="2" />
 		</div>
 	</div>
+	 <Footer />
 </template>
