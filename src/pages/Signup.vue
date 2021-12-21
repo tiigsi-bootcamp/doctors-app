@@ -4,7 +4,7 @@ const handleLogin = function () {};
 </script>
 
 <template>
-  <div class="flex md:space-x-5 h-screen px-4 md:px-24 py-16">
+  <div class="flex md:space-x-5  items-center px-4 md:px-24 py-16">
     <div class="hidden md:block flex-1">
       <img class="" src="/images/login.svg" alt="" />
     </div>
@@ -77,5 +77,4 @@ const handleLogin = function () {};
       </div>
     </div>
   </div>
-  <Footer />
 </template>

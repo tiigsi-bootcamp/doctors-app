@@ -15,8 +15,14 @@
   @apply bg-pink-600 text-gray-200;
 }
 
-.router-link-active {
+.menu.router-link-active {
   @apply text-green-500 border-b-4 border-green-500;
+}
+.singin.router-link-active {
+  @apply text-pink-500 border-b-4 border-pink-500;
+}
+.singup.router-link-active {
+  @apply  bg-pink-700 px-5 py-2 ;
 }
 
 .nav-item {

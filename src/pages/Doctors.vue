@@ -24,5 +24,4 @@ import Footer from '../components/Footer.vue';
 
     <DoctorsCard name="Test Person" specialty="PhD in testing & stuff"></DoctorsCard>
   </div>
-   <Footer />
 </template>
