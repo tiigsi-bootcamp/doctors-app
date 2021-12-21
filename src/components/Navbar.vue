@@ -26,20 +26,20 @@ let isMenuHidden = ref(true);
 
 					<ul class="hidden md:flex space-x-2 items-center">
 						<li>
-							<RouterLink to="/" class="nav-item">Home</RouterLink>
+							<RouterLink to="/" class="nav-item menu">Home</RouterLink>
 						</li>
 						<li>
-							<RouterLink to="/doctors" class="nav-item">Doctors</RouterLink>
+							<RouterLink to="/doctors" class="nav-item menu">Doctors</RouterLink>
 						</li>
 						<li>
-							<RouterLink to="/contact" class="nav-item">Contact</RouterLink>
+							<RouterLink to="/contact" class="nav-item menu">Contact</RouterLink>
 						</li>
 					</ul>
 				</div>
 
 				<div class="hidden md:flex space-x-2">
-					<RouterLink to="/login" class="button hover:bg-pink-500 hover:text-white">Login</RouterLink>
-					<RouterLink to="/signup" class="button button-pink">Signup</RouterLink>
+					<RouterLink to="/login" class="button hover:bg-pink-500 hover:text-white singin-singup">Login</RouterLink>
+					<RouterLink to="/signup" class="button button-pink singin-singup">Signup</RouterLink>
 				</div>
 
 				<button class="md:hidden text-gray-600" @click="isMenuHidden = !isMenuHidden">
