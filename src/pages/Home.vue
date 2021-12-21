@@ -95,5 +95,4 @@ const handleSearch = () => {
 			<SpecialtyCard title="Test" :doctors="2" />
 		</div>
 	</div>
-	 <Footer />
 </template>

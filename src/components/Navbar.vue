@@ -26,20 +26,20 @@ let isMenuHidden = ref(true);
 
 					<ul class="hidden md:flex space-x-2 items-center">
 						<li>
-							<RouterLink to="/" class="nav-item">Home</RouterLink>
+							<RouterLink to="/" class="menu nav-item">Home</RouterLink>
 						</li>
 						<li>
-							<RouterLink to="/doctors" class="nav-item">Doctors</RouterLink>
+							<RouterLink to="/doctors" class="menu nav-item">Doctors</RouterLink>
 						</li>
 						<li>
-							<RouterLink to="/contact" class="nav-item">Contact</RouterLink>
+							<RouterLink to="/contact" class="menu nav-item">Contact</RouterLink>
 						</li>
 					</ul>
 				</div>
 
 				<div class="hidden md:flex space-x-2">
-					<RouterLink to="/login" class="button hover:bg-pink-500 hover:text-white">Login</RouterLink>
-					<RouterLink to="/signup" class="button button-pink">Signup</RouterLink>
+					<RouterLink to="/login" class="singin button hover:bg-pink-500 hover:text-white">Login</RouterLink>
+					<RouterLink to="/signup" class="singup button button-pink">Signup</RouterLink>
 				</div>
 
 				<button class="md:hidden text-gray-600" @click="isMenuHidden = !isMenuHidden">
@@ -72,26 +72,26 @@ let isMenuHidden = ref(true);
 					<li>
 						<RouterLink
 							to="/"
-							class="block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+							class="menu block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
 						>Home</RouterLink>
 					</li>
 					<li>
 						<RouterLink
 							to="/doctors"
-							class="block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+							class="menu block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
 						>Doctor</RouterLink>
 					</li>
 					<li>
 						<RouterLink
 							to="/contact"
-							class="block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+							class="menu block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
 						>Contact</RouterLink>
 					</li>
 				</ul>
 
 				<div class="flex space-x-2 pt-10">
-					<RouterLink to="/login" class="button hover:bg-pink-500 hover:text-white">Login</RouterLink>
-					<RouterLink to="/signup" class="button button-pink">Signup</RouterLink>
+					<RouterLink to="/login" class="singin button hover:bg-pink-500 hover:text-white">Login</RouterLink>
+					<RouterLink to="/signup" class="singup button button-pink">Signup</RouterLink>
 				</div>
 			</div>
 		</nav>

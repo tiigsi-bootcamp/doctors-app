@@ -75,5 +75,4 @@ const handleLogin = function () {};
     </div>
   </div>
 
-  <Footer/>
 </template>
