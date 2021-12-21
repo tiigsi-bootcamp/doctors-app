@@ -13,7 +13,7 @@ import Footer from './components/Footer.vue';
   <div class="py-10"></div>
 
   <RouterView />
-  <Footer/>
+  <Footer />
 
   <!-- Footer will go here -->
 </template>
