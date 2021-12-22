@@ -38,7 +38,7 @@
           </div>
           <div>
             <textarea
-              class="h-full outline-none py-4 ring-1 focus:ring rounded px-5"
+              class="w-full outline-none py-4 ring-1 focus:ring rounded px-5"
               placeholder="Your Question or Comment"
               cols="30"
               rows="5"

@@ -3,6 +3,9 @@ import { ref } from '@vue/reactivity';
 import { RouterLink } from 'vue-router';
 
 let isMenuHidden = ref(true);
+function hide(){
+	isMenuHidden.value = true
+}
 </script>
 
 <template>
@@ -116,6 +119,35 @@ let isMenuHidden = ref(true);
           Doctors App
         </h4>
 
+				<ul class="w-64 text-center">
+					<li>
+						<RouterLink @click="hide"
+							to="/"
+							class="menu block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+						>Home</RouterLink>
+					</li>
+					<li>
+						<RouterLink @click="hide"
+							to="/doctors"
+							class="menu block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+						>Doctor</RouterLink>
+					</li>
+					<li>
+						<RouterLink @click="hide"
+							to="/contact"
+							class="menu block border-b border-blue-200 py-5 px-3 font-semibold tracking-widest transition hover:bg-blue-200 rounded-2xl shadow-lg"
+						>Contact</RouterLink>
+					</li>
+				</ul>
+
+				<div class="flex space-x-2 pt-10">
+					<RouterLink @click="hide" to="/login" class="singin button hover:bg-pink-500 hover:text-white">Login</RouterLink>
+					<RouterLink @click="hide" to="/signup" class="singup button button-pink">Signup</RouterLink>
+				</div>
+			</div>
+		</nav>
+	</div>
+</template>
         <ul class="w-64 text-center">
           <li>
             <RouterLink
