@@ -19,10 +19,8 @@ defineProps<{ name: string, specialty: string }>();
 				class="block text-gray-500 text-sm px-8 mt-2"
 			>{{ specialty }}</span>
 		</div>
-		<div class="text-center">
-			<button
-				class="rounded-lg text-white bg-cyan-500 transition hover:bg-cyan-400 my-10 px-10 lg:px-28 py-1"
-			>Book Now</button>
+		<div class="text-center py-10">
+			<slot name="button"></slot>
 		</div>
 	</div>
 </template>
