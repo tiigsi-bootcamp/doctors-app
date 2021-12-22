@@ -35,6 +35,10 @@
           laborum quam placeat soluta.
         </p>
 
+        <h1 class="text-3xl font-semibold font-mono text-cyan-600 my-4">
+          Follow Us
+        </h1>
+
         <p class="flex gap-4 mt-2">
           <i class="fab fa-twitter"></i>
           <i class="fab fa-instagram"></i>
