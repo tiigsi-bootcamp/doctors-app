@@ -32,7 +32,7 @@
        <slot>
        </slot>
       </div>
-      <h1 class="text-center mt-5 text-3xl font-semibold">{{name}} </h1>
+      <h1 class="text-center mt-10 text-3xl font-semibold">{{name}}</h1>
     </div>
     <div
       class="
@@ -46,7 +46,7 @@
         border-2 border-cyan-500
       "
     >
-      <h1 class="font-semibold text-3xl text-gray-500 py-4">Book Down</h1>
+      <h1 class="font-semibold text-3xl text-gray-500 py-8">Book Now</h1>
 
       <div class="flex flex-col space-y-4">
         <div>
@@ -79,8 +79,8 @@
         </div>
 
         <div class="text-lg text-gray-600 space-x-5 py-3 font-semibold">
-          <input type="radio" name="money" /> Zaad
-          <input type="radio" name="money" /> Edahab
+          <label><input type="radio" name="money" class="text-cyan-500 focus:ring-cyan-500" /> Zaad</label>
+          <label><input type="radio" name="money" class="text-cyan-500 focus:ring-cyan-500" /> Edahab</label>
         </div>
 
         <div class="text-center">

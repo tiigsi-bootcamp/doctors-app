@@ -25,7 +25,7 @@ const handleSearch = () => {
 					</div>
 
 					<div>
-						<select class="py-2 px-4 w-full outline-none ring-1 rounded focus:ring">
+						<select class="py-2 px-4 w-full outline-none ring-cyan-500 ring-1 rounded focus:ring focus:ring-cyan-500">
 							<option selected>Select Gender</option>
 							<option value="Male">Male</option>
 							<option value="Female">Female</option>
@@ -33,7 +33,7 @@ const handleSearch = () => {
 					</div>
 
 					<div>
-						<select class="py-2 px-4 w-full outline-none ring-1 rounded focus:ring">
+						<select class="py-2 px-4 w-full outline-none ring-1 ring-cyan-500 rounded focus:ring focus:ring-cyan-500">
 							<option selected>Select Specialty</option>
 							<option value="Nerves">Nerves</option>
 							<option value="Kaylyo">Kalyo</option>
